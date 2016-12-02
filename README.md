@@ -19,28 +19,28 @@ git clone https://github.com/elanatee/cognitive-services-demo.git
 cd /path/to/cognitive-services-demo-master
 ```
 4. set up a virtual environment
-...1. [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) is used to create isolated Python environments - using virtualenv makes it so that the dependencies of your different projects are maintained in different places. install virtualenv on your machine:
-...```bash
-...pip install virtualenv
-...```
-...2. in the project directory, create and activate the virtual environment for your project
-...```bash
-...virtualenv venv
-... . venv/bin/activate
-...```
-... use `deactivate` to exit the virtual environment
+   1. [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) is used to create isolated Python environments - using virtualenv makes it so that the dependencies of your different projects are maintained in different places. install virtualenv on your machine:
+```bash
+pip install virtualenv
+```
+   2. in the project directory, create and activate the virtual environment for your project
+```bash
+virtualenv venv
+ . venv/bin/activate
+```
+   use `deactivate` to exit the virtual environment
 5. install the required Python packages for this [Flask](http://flask.pocoo.org/docs/0.11/) project:
 ```bash
 pip install -r requirements.txt
 ``` 
 6. tell your terminal which application to work with by setting the FLASK_APP environment variable:
-...- on MacOS/Linux: `export FLASK_APP=app.py`
-...- on Windows: `set FLASK_APP=app.py`
+   - on MacOS/Linux: `export FLASK_APP=app.py`
+   - on Windows: `set FLASK_APP=app.py`
 7. set up the project to work with your API key
-...1. get your Computer Vision API subscription key [here](https://www.microsoft.com/cognitive-services/en-US/subscriptions)
-...2. open the file `keys.py` in a text editor
-...3. copy/paste your key into the single quotes 
-...4. save the file
+   1. get your Computer Vision API subscription key [here](https://www.microsoft.com/cognitive-services/en-US/subscriptions)
+   2. open the file `keys.py` in a text editor
+   3. copy/paste your key into the single quotes 
+   4. save the file
 8. now you can open terminal or command prompt, run the basic flask app, and navigate to http://127.0.0.1:5000/ to see it live! it should look like this: 
 ```bash
 $ flask run
