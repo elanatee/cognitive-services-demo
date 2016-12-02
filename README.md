@@ -9,45 +9,45 @@ this project demonstrates how to use the [Microsoft Cognitive Services](https://
 - [Microsoft Azure](https://azure.microsoft.com) subscription 
 
 ## setup 
--. open terminal or command prompt
+- open terminal or command prompt
 
--. clone this repository (or download it to your desktop):
+- clone this repository (or download it to your desktop):
 
 ```bash
 git clone https://github.com/elanatee/cognitive-services-demo.git
 ```
 
--. navigate to the directory: 
+- navigate to the directory: 
 
 ```bash
 cd /path/to/cognitive-services-demo-master
 ```
 
--. set up a virtual environment
-   -. [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) is used to create isolated Python environments - using virtualenv makes it so that the dependencies of your different projects are maintained in different places. install virtualenv on your machine:
+- set up a virtual environment
+   - [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) is used to create isolated Python environments - using virtualenv makes it so that the dependencies of your different projects are maintained in different places. install virtualenv on your machine:
     ```bash
     pip install virtualenv
     ```
-   -. in the project directory, create and activate the virtual environment for your project
+   - in the project directory, create and activate the virtual environment for your project
     ```bash
     virtualenv venv
     . venv/bin/activate
     ```
    use `deactivate` to exit the virtual environment
 
--. install the required Python packages for this [Flask](http://flask.pocoo.org/docs/0.11/) project:
+- install the required Python packages for this [Flask](http://flask.pocoo.org/docs/0.11/) project:
 ```bash
 pip install -r requirements.txt
 ``` 
--. tell your terminal which application to work with by setting the FLASK_APP environment variable:
+- tell your terminal which application to work with by setting the FLASK_APP environment variable:
    - on MacOS/Linux: `export FLASK_APP=app.py`
    - on Windows: `set FLASK_APP=app.py`
--. set up the project to work with your API key
+- set up the project to work with your API key
    1. get your Computer Vision API subscription key [here](https://www.microsoft.com/cognitive-services/en-US/subscriptions)
    2. open the file `keys.py` in a text editor
    3. copy/paste your key into the single quotes 
    4. save the file
--. now you can open terminal or command prompt, run the basic flask app, and navigate to http://127.0.0.1:5000/ to see it live! it should look like this: 
+- now you can open terminal or command prompt, run the basic flask app, and navigate to http://127.0.0.1:5000/ to see it live! it should look like this: 
 ```bash
 $ flask run
  * Serving Flask app "app"
