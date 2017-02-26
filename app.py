@@ -8,7 +8,7 @@ app = Flask(__name__)
 def tagPhoto():
 
     # API request URL
-    url = 'https://api.projectoxford.ai/vision/v1.0/analyze'
+    url = 'https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze'
 
     # URL of the image you want tagged
     imageUrl = 'https://s-media-cache-ak0.pinimg.com/736x/37/11/f6/3711f6644f38c5a0d58ce2853c00ca71.jpg'
